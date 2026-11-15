@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PseudoATM/PseudoATM.vcxproj" Id="5b02ec5e-fec9-4bda-b534-c0da72f5284a" />
+</Solution>
