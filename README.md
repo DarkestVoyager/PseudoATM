@@ -1,6 +1,6 @@
 ﻿# PseudoATM
 
-Simulator de ATM în C++, realizat ca proiect pentru cursul PCLP1.
+Simulator de ATM în C++, realizat ca proiect pentru laboratorul PCLP1.
 
 ## Funcționalități
 
