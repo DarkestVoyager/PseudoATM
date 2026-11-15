@@ -122,7 +122,7 @@ std::string Account::toUpper(std::string_view s)
 	return out;
 }
 
-// "EREMIA ADRIAN" -> "cont_EREMIA_ADRIAN"
+// "NUME PRENUME" -> "cont_NUME_PRENUME"
 std::string Account::fileNameFor(std::string_view name)
 {
 	std::string base{ "cont_" };
