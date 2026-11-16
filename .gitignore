@@ -3,7 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Account info and account transaction history files 
 cont_*.txt
+
 # User-specific files
 *.rsuser
 *.suo
