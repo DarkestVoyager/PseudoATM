@@ -1,6 +1,6 @@
 ﻿# PseudoATM
 
-Simulator de ATM în C++, realizat ca proiect pentru laboratorul PCLP1.
+Simulator de ATM în C++, realizat ca proiect pentru cursul PCLP1.
 
 ## Funcționalități
 
@@ -9,6 +9,33 @@ Simulator de ATM în C++, realizat ca proiect pentru laboratorul PCLP1.
 - Consultare sold, depunere și retragere de bani
 - Istoric al tranzacțiilor cu data și ora, grupat pe zile
 - Salvarea și încărcarea conturilor din fișiere text
+
+## Demonstrație
+
+### 1. Autentificare
+Dacă există un cont cu numele introdus, programul cere PIN-ul (maximum 3 încercări).
+
+![Autentificare](screenshots/01-login.png)
+
+### 2. Meniul principal și soldul
+După autentificare apare meniul cu toate opțiunile.
+
+![Meniu și sold](screenshots/02-meniu-sold.png)
+
+### 3. Informații cont
+Afișează numele titularului și soldul curent.
+
+![Info cont](screenshots/03-info-cont.png)
+
+### 4. Istoric tranzacții
+Tranzacțiile sunt grupate pe zile, fiecare cu ora, tipul, suma și soldul rezultat.
+
+![Istoric](screenshots/04-istoric.png)
+
+### 5. Depunere
+Suma se introduce de la tastatură, iar tranzacția se salvează automat în istoric.
+
+![Depunere](screenshots/05-depunere.png)
 
 ## Structura proiectului
 
@@ -35,8 +62,6 @@ La pornire se introduce numele beneficiarului:
 
 - dacă există deja un cont cu acel nume, se cere PIN-ul;
 - dacă nu există, se creează un cont nou și se alege un PIN.
-
-După autentificare apare un meniu cu opțiunile: sold, depunere, retragere, informații cont, istoric tranzacții și ieșire.
 
 Conturile se salvează în fișiere `cont_NUME.txt`, iar istoricul în `cont_NUME_istoric.txt`, în folderul din care rulează programul. Aceste fișiere sunt excluse din repository prin `.gitignore`.
 
