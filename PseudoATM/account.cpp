@@ -8,9 +8,9 @@ namespace {
 		std::time_t t = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
 		std::tm tm{};
 #ifdef _WIN32
-		localtime_s(&tm, &t);
+		localtime_s(&tm, &t); // pe Windows
 #else
-		localtime_r(&t, &tm);
+		localtime_r(&t, &tm); // pe Linux/MacOS
 #endif
 
 		std::ostringstream data, ora;
